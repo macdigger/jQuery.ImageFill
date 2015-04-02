@@ -33,6 +33,10 @@
 						// set needed CSS properties on the container and the image
 						this.container.css('overflow', 'hidden');
 						this.image.css('position', 'relative');
+
+						$(window).on("resize", function() {
+							fillContainer();
+						})
 					},
 					// show the image
 					show: function(){
